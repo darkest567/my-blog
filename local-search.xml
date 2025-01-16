@@ -3,31 +3,5 @@
   
   
   
-  <entry>
-    <title></title>
-    <link href="/my-blog/2025/01/16/1/"/>
-    <url>/my-blog/2025/01/16/1/</url>
-    
-    <content type="html"><![CDATA[<h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/my-blog/2025/01/14/1.13/"/>
-    <url>/my-blog/2025/01/14/1.13/</url>
-    
-    <content type="html"><![CDATA[<h1 id="1-13"><a href="#1-13" class="headerlink" title="1.13"></a>1.13</h1><h2 id="Configuration配置类"><a href="#Configuration配置类" class="headerlink" title="@Configuration配置类"></a>@Configuration配置类</h2><p>@Configuration(proxyBeanMethods &#x3D; false) &#x2F;&#x2F;告诉SpringBoot这是一个配置类 &#x3D;&#x3D; 配置文件<br>public class MyConfig {</p><pre><code class="hljs">/** * Full:外部无论对配置类中的这个组件注册方法调用多少次获取的都是之前注册容器中的单实例对象 * @return */@Bean //给容器中添加组件。以方法名作为组件的id。返回类型就是组件类型。返回的值，就是组件在容器中的实例public User user01()&#123;    User zhangsan = new User(&quot;zhangsan&quot;, 18);    //user组件依赖了Pet组件    zhangsan.setPet(tomcatPet());    return zhangsan;&#125;@Bean(&quot;tom&quot;)public Pet tomcatPet()&#123;    return new Pet(&quot;tomcat&quot;);&#125;</code></pre>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
   
 </search>
